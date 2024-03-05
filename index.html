@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <label><p>Upload</p></label>
+      <label><p>Upload</p></label>
+      <label><p>Upload</p></label>
+    </div>
+  </body>
+
+  <style>
+    body {
+      background: #101820;
+      color: #fee715;
+      font-family: "DM Mono";
+      padding: 0;
+      overflow-y: scroll;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body::-webkit-scrollbar {
+      background-color: #101820;
+      width: 0.6vw;
+    }
+
+    body::-webkit-scrollbar-thumb {
+      background-color: #fee715;
+      border-radius: 10px;
+    }
+
+    .navbar {
+      border: 5px solid #fee715;
+      height: 20vw;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      display: flex;
+    }
+
+    label {
+      border: 0.2vw dashed #fee715;
+      width: 15vw;
+      height: 3vh;
+      padding: 1vw;
+      border-radius: 3vw;
+      margin: auto;
+      display: flex;
+      user-select: none;
+    }
+
+    p {
+      margin: auto;
+    }
+  </style>
+</html>
