@@ -22,6 +22,11 @@
     <div class="camcontainer">
       <p>*YOUR CAM HERE*</p>
     </div>
+    <label>Start cam</label>
+    <div class="creditBar">
+      <label>Made By:</label>
+      <label>Licences</label>
+    </div>
   </body>
 
   <style>
@@ -34,6 +39,7 @@
       display: flex;
       flex-direction: column;
       height: 90vh;
+      overflow: hidden;
     }
 
     body::-webkit-scrollbar {
@@ -57,13 +63,21 @@
 
     label {
       border: 0.2vw dashed #fee715;
-      width: 15vw;
-      height: 3vh;
+      width: fit-content;
+      height: fit-content;
       padding: 1vw;
       border-radius: 3vw;
       margin: auto;
       display: flex;
       user-select: none;
+      transition: 400ms;
+    }
+
+    label:hover {
+      border: 0.5vw solid #fee715;
+      color: #101820;
+      background: #fee715;
+      font-weight: bold;
     }
 
     p {
@@ -76,6 +90,42 @@
       display: flex;
       height: 35vh;
       width: 20vh;
+      border-radius: 7vw;
+    }
+
+    .creditBar {
+      display: flex;
+      flex-direction: row;
+      width: auto;
+      height: 5vh;
+    }
+
+    .waves {
+      position: absolute;
+      top: 850px;
+      background-color: #fee715;
+      width: 100%;
+      height: 20vh;
+      margin-top: auto;
+    }
+
+    .wave {
+      top: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+    }
+
+    .wave svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 50px;
+    }
+
+    .wave .shape-fill {
+      fill: #101820;
     }
   </style>
 </html>
